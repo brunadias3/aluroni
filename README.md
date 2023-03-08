@@ -1,7 +1,9 @@
 # Aluroni 🍕
 
-O Aluroni é uma aplicação desenvolvida no curso <a href="https://cursos.alura.com.br/course/react-arquivos-estaticos" target="_blank">React: lidando com arquivos estáticos</a>. 
-Foi pensado para:
+O Aluroni é uma aplicação desenvolvida no curso <a href="https://cursos.alura.com.br/course/react-arquivos-estaticos" target="_blank">React: lidando com arquivos estáticos</a>.
+
+## 🎯 Objetivo
+Foi pensado para: 
 - Criar um projeto do zero com Create React App
 - Aprender a utilizar o normalize.css para resetar estilos padrões de navegadores
 - Configurar absolute imports para não precisar mais importar arquivos com vários níveis ('../../../')
