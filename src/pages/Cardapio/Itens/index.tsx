@@ -7,8 +7,10 @@ export default function Itens() {
     <div>
       {cardapio.map((item) => (
         <div>
-          {item.title}
-          <Item />
+          <Item 
+            key={item.id}
+            {...item}
+            />
         </div>
       ))}
     </div>

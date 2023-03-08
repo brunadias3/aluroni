@@ -1,22 +1,26 @@
 import React from 'react'
 import style from './Item.module.scss'
+import cardapio from '../itens.json'
 
-export default function Item() {
+type Props = typeof cardapio[0]
+
+export default function Item(props: Props) {
+    const { title, description, category, size, serving, price, photo } = props;
     return (
         <div className={style.item}>
             <div>
-                <img src='' alt='imagem' />
+                <img src='' alt={title} />
             </div>
             <div className={style.item__descricao}>
                 <div className={style.item__titulo}>
-                    <h2>Macarrao</h2>
-                    <p>descricao</p>
+                    <h2> {title} </h2>
+                    <p> {description} </p>
                 </div>
                 <div className={style.item__tags}>
-                    <div className={style.item__tipo}>Massa</div>
-                    <div className={style.item__porcao}>400g</div>
-                    <div className={style.item__qtdpessoas}>Serve 2 pessoas</div>
-                    <div className={style.item__valor}>R$ 50</div>
+                    <div className={style.item__tipo}>{category.label}</div>
+                    <div className={style.item__porcao}>{size}g</div>
+                    <div className={style.item__qtdpessoas}>Serve {serving} pessoa{serving === 1 ? '' : "s"}</div>
+                    <div className={style.item__valor}>R$ {price}</div>
                 </div>
             </div>
         </div>
