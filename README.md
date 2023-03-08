@@ -47,3 +47,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ```npm install normalize.css```
 ```npm install react-icons```
+```npm install classnames```
