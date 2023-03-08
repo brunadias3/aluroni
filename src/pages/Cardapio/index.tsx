@@ -21,7 +21,7 @@ export default function Cardapio() {
                 </div>
             </header>
             <section className={style.cardapio}>
-                <h3 className={style.cardapio__titulo}>Cardapio</h3>
+                <h3 className={style.cardapio__titulo}>Cardápio</h3>
                 <Buscador busca={busca} setBusca={setBusca} />
                 <div className={style.cardapio__filtros}>
                     <Filtros filtro={filtro} setFiltro={setFiltro} />
